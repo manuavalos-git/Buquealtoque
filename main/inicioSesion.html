@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" style=" min-height: 100%;
+position: relative;">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body >
+        <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/resource/logo.png" alt="" width="30" height="24">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Pasajes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="registro.html">Registrate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" >Iniciar sesion</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> 
+      <div class="cover-container d-flex p-3 mx-auto flex-column" style="background-image: url(/resource/fondo.jpg); height: 800px;align-items: center;">
+        <div class="card" style="max-width: 400px;padding: 30px;text-align: center;">
+          <div class="form-signin w-100 m-auto" style="max-width: 330px;">
+            <form >
+              <img class="mb-4" src="/resource/logo.png" alt="" width="72" height="57">
+              <h1 class="h3 mb-3 fw-normal">Iniciar Sesion</h1>
+          
+              <div class="form-floating" style="padding:10px">
+                <input type="email" class="form-control" id="floatingInput" required placeholder="name@example.com">
+                <label for="floatingInput">Email</label>
+              </div>
+              <div class="form-floating" style="padding:10px">
+                <input type="password" class="form-control" id="floatingPassword" required placeholder="Contraseña">
+                <label for="floatingPassword">Contraseña</label>
+              </div>
+          
+              <div class="checkbox mb-3">
+                <label >
+                  <input style="padding:10px" type="checkbox" value="remember-me"> Recordarme
+                </label>
+              </div>
+              <button  class="w-100 btn btn-lg btn-primary" type="submit">Continuar</button>
+            </form>
+          </div>
+        </div>
+      </div>  
+    
+
+      <footer class="footer" style="padding: 2.5rem 0; position: absolute;
+      bottom: 0; color: #727272; text-align: center;width: 100%; background-color: #f9f9f9; border-top: 0.05rem solid #e5e5e5;">
+        <p>Pagina construida por <a href="https://twitter.com/mdo">Leandro Yasutake</a> y <a href="https://www.linkedin.com/in/lautaroavalos/">Lautaro Avalos</a>.</p>
+        <p>
+          <a href="#">Back to top</a>
+        </p>
+      </footer>
+
+      <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
