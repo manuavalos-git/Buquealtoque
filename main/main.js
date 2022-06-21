@@ -15,8 +15,8 @@ const cargar=cargarPasajes.addEventListener("click",(e)=>{
         <div class="card" style="">
         <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title">Carmelo</h5>
+            <p class="card-text">Visite Carmelo! Buque Directo y beneficios extra si es cliente premium! $15.053 por persona!</p>
             <a  class="btn btn-primary" id="daytour1">Comprar</a>
             </div>
         </div>
@@ -25,8 +25,8 @@ const cargar=cargarPasajes.addEventListener("click",(e)=>{
         <div class="card" style="">
         <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title">Montevideo</h5>
+            <p class="card-text">Visite Montevideo! Buque Directo y beneficios extra si es cliente premium! $25.076 por persona!</p>
             <a class="btn btn-primary" id="daytour2">Comprar</a>
             </div>
         </div>
@@ -35,8 +35,8 @@ const cargar=cargarPasajes.addEventListener("click",(e)=>{
         <div class="card" style="">
         <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title">Colonia</h5>
+            <p class="card-text">Visite Colonia! Buque Directo y beneficios extra si es cliente premium! $12.046 por persona!</p>
             <a  class="btn btn-primary" id="daytour3">Comprar</a>
             </div>
         </div>
