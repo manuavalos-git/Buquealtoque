@@ -52,14 +52,11 @@ position: relative;">
                         <div class="row align-items-center">
                           <div class="col-md-4 ">
                             <label for="validationSelect" class="form-label">Destino</label>
-                            <select class="form-select" id="validationSelect" required>
-                              <option selected disabled value="">Selecciona un destino...</option>
-                                <option value="Colonia">Colonia</option>
+                            <select class="form-select" id="destino" required>
+                              <option value="">Selecciona un destino...</option>
+                                <option value="Colonia" selected>Colonia</option>
                                 <option value="Montevideo">Montevideo</option>
                                 <option value="Carmelo">Carmelo</option>
-                                <option value="Punta del Este">Punta del Este</option>
-                                <option value="Buenos Aires">Buenos Aires</option>
-                                <option value="Rosario">Rosario</option>
                             </select>
                           </div>
                         </div>  
@@ -103,7 +100,7 @@ position: relative;">
                           </label>
                         </div>
                         <div class="col-md-4" align-self-center>
-                          <button type="submit" id="cargarPasajes" class="btn btn-primary" >Ver diponibilidad</button>
+                          <button type="button" onclick="mostrarDisponibles()" id="cargarPasajes" class="btn btn-primary" >Ver diponibilidad</button>
                         </div>
                       </div>
                   </form>

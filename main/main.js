@@ -3,7 +3,86 @@ window.onload = () => {
     const cargarPasaje=document.getElementById("cargarPasajes");
 }
 
-const cargar=cargarPasajes.addEventListener("click",(e)=>{
+mostrarDisponibles=()=>{
+    const destino = document.getElementById("destino");
+    const div=document.getElementById("divDisponibilidad");
+
+    if(document.getElementById("datetime").value==""){
+        alert("Debe completar todos los campos");    
+    } else {
+        if (destino.value === "Carmelo"){
+            div.innerHTML=`
+            <div class="col">
+            <div class="card" style="">
+            <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Carmelo</h5>
+                <p class="card-text">Visite Carmelo! Buque Directo y beneficios extra si es cliente premium! $15.053 por persona!</p>
+                <a  class="btn btn-primary" id="daytour1">Comprar</a>
+                </div>
+            </div>
+            </div>
+            `;
+        } else if (destino.value === "Montevideo") {
+            div.innerHTML=`
+            <div class="col">
+            <div class="card" style="">
+            <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Montevideo</h5>
+                <p class="card-text">Visite Montevideo! Buque Directo y beneficios extra si es cliente premium! $19.343 por persona!</p>
+                <a  class="btn btn-primary" id="daytour1">Comprar</a>
+                </div>
+            </div>
+            </div>
+            `;
+        } else {
+            div.innerHTML=`
+            <div class="col">
+            <div class="card" style="">
+            <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Colonia</h5>
+                <p class="card-text">Visite Colonia! Buque Directo y beneficios extra si es cliente premium! $11.063 por persona!</p>
+                <a  class="btn btn-primary" id="daytour1">Comprar</a>
+                </div>
+            </div>
+            </div>
+            `;
+        }
+        daytour1.addEventListener("click",(e)=>{
+            e.preventDefault();
+            if(localStorage.getItem("inicio")=="true"){
+                alert("Compra realizada");
+            }
+            else{
+                window.location.href="inicioSesion.html";
+            }
+        });
+        daytour2.addEventListener("click",(e)=>{
+            e.preventDefault();
+            if(localStorage.getItem("inicio")=="true"){
+                alert("Compra realizada");
+            }
+            else{
+                window.location.href="inicioSesion.html";
+            }
+        });
+        daytour3.addEventListener("click",(e)=>{
+            e.preventDefault();
+            if(localStorage.getItem("inicio")=="true"){
+                alert("Compra realizada");
+            }
+            else{
+                alert("Debe iniciar sesión para comprar un producto!");
+                window.location.href="inicioSesion.html";
+            }
+        });
+        return false;
+    }
+}    
+
+/*const cargar=cargarPasajes.addEventListener("click",(e)=>{
     e.preventDefault();
     if(document.getElementById("datetime").value=="" ||document.getElementById("validationSelect").value==""){
         alert("Debe completar todos los campos");    
@@ -41,37 +120,9 @@ const cargar=cargarPasajes.addEventListener("click",(e)=>{
             </div>
         </div>
     </div>
-    `;
-    daytour1.addEventListener("click",(e)=>{
-        e.preventDefault();
-        if(localStorage.getItem("inicio")=="true"){
-            alert("Compra realizada");
-        }
-        else{
-            window.location.href="inicioSesion.html";
-        }
-    });
-    daytour2.addEventListener("click",(e)=>{
-        e.preventDefault();
-        if(localStorage.getItem("inicio")=="true"){
-            alert("Compra realizada");
-        }
-        else{
-            window.location.href="inicioSesion.html";
-        }
-    });
-    daytour3.addEventListener("click",(e)=>{
-        e.preventDefault();
-        if(localStorage.getItem("inicio")=="true"){
-            alert("Compra realizada");
-        }
-        else{
-            window.location.href="inicioSesion.html";
-        }
-    });
-    return false;
-}
-});
+    `;*/
+
+    
 
 function ajustarFecha() {
     var today = new Date();
