@@ -28,7 +28,7 @@ const cargar=cargarPasajes.addEventListener("click",(e)=>{
     div.innerHTML=`
     <div class="col">
         <div class="card" style="">
-        <img src="" class="card-img-top" alt="...">
+        <img src="/resource/barcopasaje.jpg" class="card-img-top" alt="...">
             <div class="card-body">
             <h5 class="card-title">${origen} a ${destino}</h5>
             <p class="card-text">El viaje de ${origen} a ${destino} tiene un valor de $29.098, aproveche ahora!</p>
