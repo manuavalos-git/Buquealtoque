@@ -24,6 +24,7 @@ window.onload = () => {
                  const registrado={email,contraseña};
                  registrados.push(registrado);
                  localStorage.setItem("registrados",JSON.stringify(registrados));
+                 window.location.href="index.html";
              } 
         }
         else{
