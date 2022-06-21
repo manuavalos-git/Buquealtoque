@@ -7,7 +7,7 @@ mostrarDisponibles=()=>{
     const destino = document.getElementById("destino");
     const div=document.getElementById("divDisponibilidad");
 
-    if(document.getElementById("datetime").value==""){
+    if(document.getElementById("datetime").value=="" || destino =="" ){
         alert("Debe completar todos los campos");    
     } else {
         if (destino.value === "Carmelo"){
