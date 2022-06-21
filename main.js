@@ -27,7 +27,7 @@ mostrarDisponibles=()=>{
             div.innerHTML=`
             <div class="col">
             <div class="card" style="">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="/resource/barcopasaje.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                 <h5 class="card-title">Montevideo</h5>
                 <p class="card-text">Visite Montevideo! Buque Directo y beneficios extra si es cliente premium! $19.343 por persona!</p>
@@ -40,7 +40,7 @@ mostrarDisponibles=()=>{
             div.innerHTML=`
             <div class="col">
             <div class="card" style="">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="/resource/barcopasaje.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                 <h5 class="card-title">Colonia</h5>
                 <p class="card-text">Visite Colonia! Buque Directo y beneficios extra si es cliente premium! $11.063 por persona!</p>
