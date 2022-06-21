@@ -56,6 +56,7 @@ mostrarDisponibles=()=>{
                 alert("Compra realizada");
             }
             else{
+                alert("Debe iniciar sesión para comprar un producto!");
                 window.location.href="inicioSesion.html";
             }
         });
@@ -65,6 +66,7 @@ mostrarDisponibles=()=>{
                 alert("Compra realizada");
             }
             else{
+                alert("Debe iniciar sesión para comprar un producto!");
                 window.location.href="inicioSesion.html";
             }
         });
