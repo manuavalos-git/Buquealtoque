@@ -60,7 +60,7 @@ position: relative;">
                 <input type="date" id="rnacimiento" max="2003-01-01" class="form-control" required>
               </div>
 
-              <div class="radiobuttonflex" id="formadepago">
+              <div class="radiobuttonflex">
                 <div><label for="formadepago">Forma de Pago</label></div>
                 <input type="button" id="tarjeta-credito" onclick="formularioTarjeta()" value="Tarjeta de crédito"/>
                 <input type="button" id="CBU/CVU" onclick="formularioCBUCVU()" value="CBU/CVU"/>
@@ -82,18 +82,24 @@ position: relative;">
               <button id="btnRegistro" class="w-100 btn btn-lg btn-primary" type="submit">Continuar</button>
             </div>
 
-              <div id="contenedor-formulario-tarjeta" class="grid" style="display:none">
-                <label for="ttarjeta">Número de tarjeta</label>
-                <div class=" input-group has-validation" style="padding:5px"><input id="ttarjeta" type="number" placeholder="16 números" min="0000000000000000" required/></div>
-                <div class=" input-group has-validation" style="padding:5px" ></div><input type="text" id="tnombres" onclick="" placeholder="Titular en la tarjeta" required/> </div>
-                <label for="tfecha">Vencimiento</label>
-                <div class=" input-group has-validation"></div><input id="tfecha" type="date"  min="2020-01-01"   max="2040-12-01" required/></div>   
-                <label for="tcodigo" >Código de seguridad</label>
-                <div class=" input-group has-validation" style="padding:5px"></div><input id="tcodigo" type="number" placeholder="111" min="000" max="999" required/></div>          
-                <div><input type="submit" onclick="validartarjeta()" value="Confirmar" class="btn btn-secondary btn-lg btn-block"/></div>
-                <div style="padding:5px"><input type="submit" onclick="volveratras()" value="Volver Atrás" class="btn btn-primary btn-lg btn-block"/></div>
-              </div>
+            <div id="contenedor-formulario-tarjeta" class="grid" style="display:none">
+              <label for="ttarjeta">Número de tarjeta</label>
+              <div style="padding:5px"><input id="ttarjeta" type="number" placeholder="16 números" min="0000000000000000" required/></div>
+              <div style="padding:5px" ><input type="text" id="tnombres" onclick="" placeholder="Titular en la tarjeta" required/> </div>
+              <label for="tfecha">Vencimiento</label>
+              <div><input id="tfecha" type="date"  min="2020-01-01"   max="2040-12-01" required/></div>   
+              <label for="tcodigo" >Código de seguridad</label>
+              <div style="padding:5px"><input id="tcodigo" type="number" placeholder="111" min="000" max="999" required/></div>          
+              <div><input type="submit" onclick="validartarjeta()" value="Confirmar" class="btn btn-secondary btn-lg btn-block"/></div>
+              <div style="padding:5px"><input type="submit" onclick="volveratras()" value="Volver Atrás" class="btn btn-primary btn-lg btn-block"/></div>
+            </div>
 
+            <div id="contenedor-formulario-CBUCVU" class="grid" style="display:none">
+              <label for="ttarjeta">Número de CBU/CVU</label>
+              <div style="padding:5px"><input id="CBUCVU" type="number" placeholder="22 números" min="0000000000000000000000" required/></div>        
+              <div><input type="submit" onclick="validarCBUCVU()" value="Confirmar" class="btn btn-secondary btn-lg btn-block"/></div>
+              <div style="padding:5px"><input type="submit" onclick="volveratras()" value="Volver Atrás" class="btn btn-primary btn-lg btn-block"/></div>
+            </div>
             </form>
           </div>
         </div>
