@@ -16,16 +16,22 @@ window.onload = () => {
 }
 const verificarRegistrado=(email,contraseña)=>{  
     const registrados=JSON.parse(localStorage.getItem("registrados"));
-    let hayRegistrado=false;
-    registrados.forEach(element => {
-        if(element.email==email && element.contraseña==contraseña){
-            localStorage.setItem("inicio","true");
-            hayRegistrado=true;
-            alert("Bienvenido");
-            /*window.location.href="index.html";*/
-        }
-    });
-    if(!hayRegistrado){
-    alert("Contraseña y/o email incorrectos");
+    if(registrados==null){
+        alert("Contraseña y/o email incorrectos");
     }
+    else{
+        let hayRegistrado=false;
+        registrados.forEach(element => {
+            if(element.email==email && element.contraseña==contraseña){
+                localStorage.setItem("inicio","true");
+                hayRegistrado=true;
+                alert("Bienvenido");
+                /*window.location.href="index.html";*/
+            }
+        });
+        if(hayRegistrado==false){
+            alert("Contraseña y/o email incorrectos");
+        }
+    }
+   
 }        
