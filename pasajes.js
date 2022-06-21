@@ -31,7 +31,7 @@ const cargar=cargarPasajes.addEventListener("click",(e)=>{
         <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
             <h5 class="card-title">${origen} a ${destino}</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">El viaje de ${origen} a ${destino} tiene un valor de $29.098, aproveche ahora!</p>
             <a  class="btn btn-primary" id="pasaje1">Comprar</a>
             </div>
         </div>
