@@ -57,7 +57,7 @@ mostrarDisponibles=()=>{
             }
             else{
                 alert("Debe iniciar sesión para comprar un producto!");
-                window.location.href="inicioSesion.html";
+                /*window.location.href="inicioSesion.html";*/
             }
         });
         return false;
