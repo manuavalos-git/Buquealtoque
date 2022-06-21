@@ -59,25 +59,6 @@ mostrarDisponibles=()=>{
                 window.location.href="inicioSesion.html";
             }
         });
-        daytour2.addEventListener("click",(e)=>{
-            e.preventDefault();
-            if(localStorage.getItem("inicio")=="true"){
-                alert("Compra realizada");
-            }
-            else{
-                window.location.href="inicioSesion.html";
-            }
-        });
-        daytour3.addEventListener("click",(e)=>{
-            e.preventDefault();
-            if(localStorage.getItem("inicio")=="true"){
-                alert("Compra realizada");
-            }
-            else{
-                alert("Debe iniciar sesión para comprar un producto!");
-                window.location.href="inicioSesion.html";
-            }
-        });
         return false;
     }
 }    
