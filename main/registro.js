@@ -60,3 +60,54 @@ const validarContraseña=(contraseña)=>{
     const regex=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
     return regex.test(contraseña);
 }
+
+validartarjeta=()=>{
+    const formularioTarjeta= document.getElementById("contenedor-formulario-tarjeta");
+    const formularioPrincipal= document.getElementById("contenedor-formulario-principal");
+
+    const numeroTarjeta= document.getElementById("ttarjeta").value;
+    const formnombres= document.getElementById("tnombres").value;
+    const formcodigo= document.getElementById("tcodigo").value;
+
+    const expresiones = {
+        nombres: /^[a-z]/  ,
+        tarjeta: /[1-9]{16}/,    
+        codigo: /[1-9]{3}/
+    }
+
+    if( ! expresiones.tarjeta.test(numeroTarjeta)){
+            alert("Número de tarjeta no válida");
+            return false;
+        }
+     if( ! expresiones.nombres.test(formnombres) || formnombres!= rnombre.value + " " + rapellido.value){
+            alert("La tarjeta debe tener como titular al cliente ingresado");
+            return false;
+         }           
+      if( ! expresiones.codigo.test(formcodigo)){
+            alert("Código de seguridad inválido");
+            return false;
+         }   
+                 
+    else{
+        formularioTarjeta.style.display="none";
+        formularioPrincipal.style.display="block";
+        alert("Tarjeta agregada!");
+        return true;
+    }
+}
+
+formularioTarjeta=()=>{
+    const formularioTarjeta= document.getElementById("contenedor-formulario-tarjeta");
+    const formularioPrincipal= document.getElementById("contenedor-formulario-principal");
+
+    formularioTarjeta.style.display="block";
+    formularioPrincipal.style.display="none";
+}
+
+volveratras=(b)=>{
+    const formularioTarjeta= document.getElementById("contenedor-formulario-tarjeta");
+    const formularioPrincipal= document.getElementById("contenedor-formulario-principal");
+
+    formularioTarjeta.style.display="none";
+    formularioPrincipal.style.display="block";
+}

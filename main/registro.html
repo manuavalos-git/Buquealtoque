@@ -34,10 +34,11 @@ position: relative;">
       <div class="cover-container d-flex p-3 mx-auto flex-column" style="background-image: url(/resource/fondo.jpg); height: 800px;align-items: center;">
         <div class="card" style="max-width: 400px;padding: 30px;text-align: center;">
           <div class="form-signin w-100 m-auto" style="max-width: 330px;">
-            <form >
+            <form>
               <img class="mb-4" src="/resource/logo.png" alt="" width="72" height="57">
               <h1 class="h3 mb-3 fw-normal">Registrate</h1>
 
+              <div id="contenedor-formulario-principal">
               <div class="input-group has-validation" style="padding:10px">
                 <input type="text" id="rnombre" class="form-control"  required placeholder="Nombre">
               </div>
@@ -79,24 +80,36 @@ position: relative;">
                 </label>
               </div>
               <button id="btnRegistro" class="w-100 btn btn-lg btn-primary" type="submit">Continuar</button>
+            </div>
+
+              <div id="contenedor-formulario-tarjeta" class="grid" style="display:none">
+                <label for="ttarjeta">Número de tarjeta</label>
+                <div class=" input-group has-validation" style="padding:5px"><input id="ttarjeta" type="number" placeholder="16 números" min="0000000000000000" required/></div>
+                <div class=" input-group has-validation" style="padding:5px" ></div><input type="text" id="tnombres" onclick="" placeholder="Titular en la tarjeta" required/> </div>
+                <label for="tfecha">Vencimiento</label>
+                <div class=" input-group has-validation"></div><input id="tfecha" type="date"  min="2020-01-01"   max="2040-12-01" required/></div>   
+                <label for="tcodigo" >Código de seguridad</label>
+                <div class=" input-group has-validation" style="padding:5px"></div><input id="tcodigo" type="number" placeholder="111" min="000" max="999" required/></div>          
+                <div><input type="submit" onclick="validartarjeta()" value="Confirmar" class="btn btn-secondary btn-lg btn-block"/></div>
+                <div style="padding:5px"><input type="submit" onclick="volveratras()" value="Volver Atrás" class="btn btn-primary btn-lg btn-block"/></div>
+              </div>
+
             </form>
           </div>
         </div>
       </div>  
     
 
-      <footer class="footer" style="padding: 2.5rem 0; position: absolute;
+      <!-- <footer class="footer" style="padding: 2.5rem 0; position: absolute;
       bottom: 0; color: #727272; text-align: center;width: 100%; background-color: #f9f9f9; border-top: 0.05rem solid #e5e5e5;">
         <p>Pagina construida por <a href="https://gitlab.com/LeandroYasutake">Leandro Yasutake</a> y <a href="https://www.linkedin.com/in/lautaroavalos/">Lautaro Avalos</a>.</p>
         <p>
           <a href="#">Back to top</a>
         </p>
       </footer>
-
+      -->
 
       <script src="registro.js"></script>
-
-      
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>
