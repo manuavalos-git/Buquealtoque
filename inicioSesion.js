@@ -22,7 +22,7 @@ const verificarRegistrado=(email,contraseña)=>{
             localStorage.setItem("inicio","true");
             hayRegistrado=true;
             alert("Bienvenido");
-            window.location.href="index.html";
+            /*window.location.href="index.html";*/
         }
     });
     if(!hayRegistrado){
