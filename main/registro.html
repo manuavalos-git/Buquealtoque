@@ -37,19 +37,40 @@ position: relative;">
             <form >
               <img class="mb-4" src="/resource/logo.png" alt="" width="72" height="57">
               <h1 class="h3 mb-3 fw-normal">Registrate</h1>
+
+              <div class="input-group has-validation" style="padding:10px">
+                <input type="text" id="rnombre" class="form-control"  required placeholder="Nombre">
+              </div>
+
+              <div class="input-group has-validation" style="padding:10px">
+                <input type="text" id="rapellido" class="form-control"  required placeholder="Apellido">
+              </div>
+
+              <div class="input-group has-validation" style="padding:10px">
+                <input type="text" id="rdomicilio" class="form-control"  required placeholder="Domicilio">
+              </div>
+
+              <div class="input-group has-validation" style="padding:10px">
+                <input type="text" id="rdni" class="form-control"  required placeholder="DNI">
+              </div>
+
+              <div><label for="rnacimiento">Fecha de Nacimiento</label></div>
+              <div class="input-group has-validation" style="padding:10px">
+                <input type="date" id="rnacimiento" max="2003-01-01" class="form-control" required>
+              </div>
+
+              <div class="radiobuttonflex" id="formadepago">
+                <div><label for="formadepago">Forma de Pago</label></div>
+                <input type="button" id="tarjeta-credito" onclick="formularioTarjeta()" value="Tarjeta de crédito"/>
+                <input type="button" id="CBU/CVU" onclick="formularioCBUCVU()" value="CBU/CVU"/>
+              </div>
           
               <div class="input-group has-validation" style="padding:10px">
                 <input type="email" id="email" class="form-control"  required placeholder="name@example.com">
-                <label for="email">Email </label>
               </div>
               
               <div  class=" input-group has-validation" style="padding:10px">
                 <input id="contraseña" type="password" class="form-control" required placeholder="Contraseña">
-                <label for="contraseña">Contraseña</label>
-                <div id="controlContra" style="display: block;" class="invalid-feedback" hidden>
-                    Please choose a username.
-                </div>
-
               </div>
           
               <div class="checkbox mb-3">
